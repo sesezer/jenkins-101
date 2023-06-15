@@ -35,5 +35,13 @@ pipeline {
                 '''
             }
         }
+        stage('Deliver') {
+            steps {
+                echo 'Deliver....'
+                sh '''
+                echo "doing delivery stuff2.."
+                '''
+            }
+        }
     }
 }
